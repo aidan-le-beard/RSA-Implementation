@@ -1,9 +1,10 @@
 # RSA-Implementation
-This implementation of RSA encryption of integers utilizes three algorithms: Pseudoprime, ExtendedEuclid, and ModularExponentiation. Pseudoprime has the ability to occasionally return false primes, but it is sufficient for this implementation. 
 
 ## You do NOT have permission to use this code for any schoolwork purposes under any circumstances. 
 
 ## You do NOT have permission to use this code for any commercial purposes without speaking to me to work out a deal.
+
+This implementation of RSA encryption of integers utilizes three algorithms: Pseudoprime, ExtendedEuclid, and ModularExponentiation. Pseudoprime has the ability to occasionally return false primes, but it is sufficient for this implementation. 
 
 This program chooses two large prime numbers, p and q, and multiplies them together, giving another number n that is nearly impossible to factor. Similarly (p – 1) and (q – 1) are multiplied together, giving ϕ(n) and a number coprime to ϕ(n) is found, giving e. This pair, (e, n) make up the public key. The secret key is then generated, by calling ExtendedEuclid algorithm to find the multiplicative inverse of (e, ϕ(n)), which is the second number returned, giving d. The secret key then is (d, n).
 
